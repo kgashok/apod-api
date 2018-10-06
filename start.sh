@@ -1,5 +1,6 @@
 # For development use (simple logging, etc):
 #python server.py
-python apod/service.py
+#python apod/service.py
 # For production use: 
-# gunicorn server:app -w 1 --log-file -
+#gunicorn server:app -w 1 --log-file -
+gunicorn apod.service:app --log-file=-

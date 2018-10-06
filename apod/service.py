@@ -265,7 +265,8 @@ def page_not_found(e):
     """
     Return a custom 404 error.
     """
-    LOG.info('Invalid page request: ' + e)
+    LOG.info('Invalid page request: '); #  + e)
+    LOG.info(e);
     return _abort(404, 'Sorry, Nothing at this URL.', usage=True)
 
 
@@ -278,4 +279,9 @@ def application_error(e):
 
 
 if __name__ == '__main__':
-    app.run()
+    import ssl
+    context = ('ssl.cert', 'ssl.key')
+    #app.run(ssl_context=context)
+    #app.run(ssl_context="adhoc")
+    app.run(ssl_context=context)
+    #app.run()
