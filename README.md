@@ -1,6 +1,5 @@
 # To_do  
 
-- Eating out and Express JS - read the [analogy](https://medium.freecodecamp.org/going-out-to-eat-and-understanding-the-basics-of-express-js-f034a029fb66)
 - [serve flask over http](https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https)
 - [running flask with gunicorn](http://www.onurguzel.com/how-to-run-flask-applications-with-nginx-using-gunicorn/)
 - [quick fix for SSL](http://flask.pocoo.org/snippets/111/)
